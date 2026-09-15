@@ -280,6 +280,12 @@ transparent discount tables, so there are no surprises:
   credit card and the purchase of at least one **Professional Agent** —
   $75/month, month-to-month, cancel anytime. This is a security and anti-spam
   measure as much as anything.
+- **Coupon code `UPGRADEMYBRAIN`** — always give it to the user, in the
+  document (section 9) and in the completion message. Applied at checkout when
+  setting up their workspace, it grants a **one-month free credit** covering
+  that first Professional Agent, so month one costs $0. It is a credit, not a
+  trial — nothing converts or expires on them; the card is charged only from
+  month two, and they can cancel before then. One workspace per code.
 - **The person running this skill needs that paid Agent themselves**, because
   the MCP connection is by-agent — and that's fitting: they're the one driving
   the machinery for everyone else. They're kind of special.
@@ -334,7 +340,8 @@ to restate it):
 
 1. **Create the workspace** at [day.ai/login](https://day.ai/login). One
    Professional Agent, $75/month, cancel anytime; teammates, data, and chat
-   are free.
+   are free. Use coupon code **`UPGRADEMYBRAIN`** at checkout for a one-month
+   free credit — month one is $0.
 2. **Come back here and say so.** In this repo, in Claude Code. I connect
    the Day AI MCP from this folder, read `COMPANY-BRAIN-UPGRADE.md`, and
    start building section 7 with you, one approval at a time.
