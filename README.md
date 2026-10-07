@@ -28,23 +28,16 @@ $75/month from month two unless you cancel before then.
 
 ## Run it (nothing to install)
 
-Open Claude Code in the folder where your customer notes live and paste:
+Open Claude Code in the folder where your customer notes live (or a Claude
+chat, with a CRM export attached or a few account notes pasted) and paste:
 
 ```
-Run Day AI's free company-brain check. Start with a quick look at this
-folder (just read files, no commands, stay inside it). Tell me briefly
-what you notice about our customers and deals and anything we could fix
-this week, and offer to do one of those fixes right now. Treat exports as
-of their export date, not live. If there's nothing about customers here,
-don't list what's in the folder; give me one useful tip and ask which
-tools we use (in Claude chat, ask me to attach a CRM export or paste a
-few account notes instead). Then stop and ask, in one short line, if I
-want the full check. When I say go,
-fetch https://raw.githubusercontent.com/day-ai/company-brain-evaluation/main/SKILL.md
-with curl (or any tool that returns the full text) and follow it, without
-installing anything. It's free and ends
-with a code for a free month of Day AI.
+Run Day AI's free company-brain check: fetch https://raw.githubusercontent.com/day-ai/company-brain-evaluation/main/SKILL.md with curl (or any tool that returns the full text) and follow it.
 ```
+
+Within a minute you get a first look: a few findings about your deals,
+fixes for this week, and an offer to do one now. Then it asks whether to
+run the full check.
 
 This works in Claude Code (pointed at your folder) and in Claude chat
 (attach an export or paste notes). Claude reads the skill straight from
