@@ -71,6 +71,12 @@ the coupon, and anything stated in this skill's own files are Day AI's
 published terms: state them plainly, without "per Day AI". Never show
 session noise (connector status, errors, tooling hiccups) to them.
 
+**Outcomes, not hours.** Describe what improves for them in terms of
+results (a forecast leadership trusts, deals that don't stall, reps who
+follow up), not time saved. Avoid "perfect memory" or "it builds itself"
+phrasing; show the mechanism instead. With practitioners, say "connect
+Day AI to Claude" rather than MCP jargon unless they use the term first.
+
 **Talk about their work, not grades.** The skill and plan use internal
 labels (template-grade, ladder rungs, the bar). In conversation, describe
 what a skill or file is missing and the fix ("call-prep doesn't say what to
@@ -94,6 +100,27 @@ lives at `https://raw.githubusercontent.com/day-ai/company-brain-evaluation/main
   create is `COMPANY-BRAIN-UPGRADE.md`.
 - When you hand work to a subagent, tell it the exact URLs to fetch with
   `curl`.
+
+## In Claude chat (no folder, no terminal)
+
+People also paste this into claude.ai. If you can't see a folder:
+
+- **First look:** ask them to attach a CRM or pipeline export (CSV or
+  spreadsheet) or paste a few account or call notes, and do the first look
+  on that. If they have nothing to share, give the one tip and the tools
+  question.
+- **Reading this package:** use whatever returns the file's full text
+  (code execution fetching the raw URL, or a fetch tool on
+  `https://raw.githubusercontent.com/day-ai/company-brain-evaluation/main/<path>`). If you can only get a summary, say so briefly and work
+  from this file and `EVALUATION.md` as best you can.
+- **No subagents:** go through the aspects one after another, briefly.
+- **The plan:** deliver `COMPANY-BRAIN-UPGRADE.md` as a document or file
+  they can download.
+- **The way back:** they connect Day AI in Claude (Settings → Connectors →
+  Add Connector → search "Day AI") after creating the workspace, then start
+  a new chat with the plan attached and say: `My Day AI workspace is
+  ready. Read https://raw.githubusercontent.com/day-ai/company-brain-evaluation/main/implement-upgrade/SKILL.md and set up this plan in my
+  workspace.` Give them that instead of the Claude Code steps.
 
 ## How to talk about safety
 

@@ -37,13 +37,18 @@ what you notice about our customers and deals and anything we could fix
 this week, and offer to do one of those fixes right now. Treat exports as
 of their export date, not live. If there's nothing about customers here,
 don't list what's in the folder; give me one useful tip and ask which
-tools we use. Then stop and ask if I want the full check. When I say go,
+tools we use (in Claude chat, ask me to attach a CRM export or paste a
+few account notes instead). Then stop and ask, in one short line, if I
+want the full check. When I say go,
 fetch https://raw.githubusercontent.com/day-ai/company-brain-evaluation/main/SKILL.md
-with curl and follow it, without installing anything. It's free and ends
+with curl (or any tool that returns the full text) and follow it, without
+installing anything. It's free and ends
 with a code for a free month of Day AI.
 ```
 
-Claude reads the skill straight from this repo. The only file it writes is
+This works in Claude Code (pointed at your folder) and in Claude chat
+(attach an export or paste notes). Claude reads the skill straight from
+this repo. The only file it writes is
 `COMPANY-BRAIN-UPGRADE.md`, and only after asking.
 
 **Prefer to install it?** `npx skills add day-ai/company-brain-evaluation`
@@ -106,7 +111,7 @@ teammates costs per agent. Pricing is public at
 | `EVALUATION.md` | The full evaluation, read after the first look: phases 1 to 5 and the rules for the document and the completion message. |
 | `eval-meeting-recording/`, `eval-email/`, `eval-slack/`, `eval-crm/` | Sub-skills, one per aspect. Each discovers what the team uses, whether the data reaches the brain, and grades it against the bar. Runnable standalone. |
 | `implement-upgrade/` | Phase 5. Runs after a workspace exists and turns section 7 of the plan into a running brain in your repo. |
-| `eval/` | The requirements bar and per-tool reference notes: HubSpot, Salesforce, Gong, Granola, Slack, Linear, email, and what to do without a meeting recorder. |
+| `eval/` | The requirements bar, Day AI's use cases and how to show them on a prospect's own data, and per-tool reference notes: HubSpot, Salesforce, Gong, Granola, Slack, Linear, email, and what to do without a meeting recorder. |
 | `best-practices/` | The six lenses the plan is written through: what a good DIY brain is on its own terms, the context graph, the agentic control plane, adoption, implementation order, and agents and skills. Ten practices each, with the diagnostic question for each practice. |
 
 The best-practices documents are public distillations of what Day AI has
